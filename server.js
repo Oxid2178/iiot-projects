@@ -170,7 +170,7 @@ app.put('/contactlist/:id', function(req, res) {
 });
 
 app.listen(port, ip);
-console.log("Server running on port 3000");
+console.log('Server running on http://%s:%s', ip, port);
 
 
 
