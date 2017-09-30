@@ -11,15 +11,46 @@ var upload = multer(); // for parsing multipart/form-data
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
-var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+//var ip = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
 //var ip = process.env.OPENSHIFT_NODEJS_IP || '192.168.178.28';
-var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
+//var port = process.env.OPENSHIFT_NODEJS_PORT || 3000;
 //var ip = 0.0.0.0 || '192.168.178.28';
 //var port = 8080 || 3000;
 
 
+
+
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+    ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
+    mongoURL = process.env.OPENSHIFT_MONGODB_DB_URL || process.env.MONGO_URL || 'mongodb://localhost/bastelraumtoedi',
+    mongoURLLabel = "";
+
+if (mongoURL == null && process.env.DATABASE_SERVICE_NAME) {
+  var mongoServiceName = process.env.DATABASE_SERVICE_NAME.toUpperCase(),
+      mongoHost = process.env[mongoServiceName + '_SERVICE_HOST'],
+      mongoPort = process.env[mongoServiceName + '_SERVICE_PORT'],
+      mongoDatabase = process.env[mongoServiceName + '_DATABASE'],
+      mongoPassword = process.env[mongoServiceName + '_PASSWORD']
+      mongoUser = process.env[mongoServiceName + '_USER'];
+
+  if (mongoHost && mongoPort && mongoDatabase) {
+    mongoURLLabel = mongoURL = 'mongodb://';
+    if (mongoUser && mongoPassword) {
+      mongoURL += mongoUser + ':' + mongoPassword + '@';
+    }
+    // Provide UI label that excludes user id and pw
+    mongoURLLabel += mongoHost + ':' + mongoPort + '/' + mongoDatabase;
+    mongoURL += mongoHost + ':' +  mongoPort + '/' + mongoDatabase;
+
+  }
+}
+
+
+
+
 var mongoose = require('mongoose');
-var connectionString = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/bastelraumtoedi';
+//var connectionString = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/bastelraumtoedi';
+var connectionString = mongoURL; 
 mongoose.connect(connectionString);
 
 app.use(express.static(__dirname + "/public"));
