@@ -52,6 +52,7 @@ var mongoose = require('mongoose');
 //var connectionString = process.env.OPENSHIFT_MONGODB_DB_URL || 'mongodb://localhost/bastelraumtoedi';
 var connectionString = mongoURL; 
 mongoose.connect(connectionString);
+console.log('Connected to MongoDB at: %s', mongoURL);
 
 app.use(express.static(__dirname + "/public"));
 
