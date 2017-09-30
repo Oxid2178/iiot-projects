@@ -1,0 +1,106 @@
+bastelraumtoedi  Add to Project  Node.js + MongoDB (Persistent)  Next Steps
+Application created. Continue to overview.
+
+The following service(s) have been created in your project: nodejs-mongo-persistent, mongodb.
+
+For more information about using this template, including OpenShift considerations, see https://github.com/openshift/nodejs-ex/blob/master/README.md.
+Manage your app
+
+The web console is convenient, but if you need deeper control you may want to try our command line tools.
+
+Command line tools
+
+Download and install the oc command line tool. After that, you can start by logging in, switching to this particular project, and displaying an overview of it, by doing:
+
+oc login https://api.starter-us-east-1.openshift.com
+oc project bastelraumtoedi
+oc status
+For more information about the command line tools, check the CLI Reference and Basic CLI Operations.
+
+Applied Parameter Values
+
+These parameters often include things like passwords. If you will need to reference these values later, copy them to a safe location. Parameters SOURCE_REPOSITORY_REF, CONTEXT_DIR, GITHUB_WEBHOOK_SECRET, GENERIC_WEBHOOK_SECRET, NPM_MIRROR were generated automatically.
+
+Name
+Value
+Name
+NAME
+Value
+
+nodejs-mongo-persistent
+Name
+NAMESPACE
+Value
+
+bastelraumtoedi
+Name
+MEMORY_LIMIT
+Value
+
+16Mi
+Name
+MEMORY_MONGODB_LIMIT
+Value
+
+16Mi
+Name
+VOLUME_CAPACITY
+Value
+
+1Gi
+Name
+SOURCE_REPOSITORY_URL
+Value
+
+https://github.com/openshift/bastelraumtoedi.git
+Name
+SOURCE_REPOSITORY_REF
+Value
+
+Name
+CONTEXT_DIR
+Value
+
+Name
+APPLICATION_DOMAIN
+Value
+
+bastelraumtoedi
+Name
+GITHUB_WEBHOOK_SECRET
+Value
+
+juj7Cd1h6WHEvdiD0dAERppMEVRepmdTCoWJWOf8
+Name
+GENERIC_WEBHOOK_SECRET
+Value
+
+AC3nOSuHxVIvGK4anaI6IASttbh2SJ1uDHwLmLPo
+Name
+DATABASE_SERVICE_NAME
+Value
+
+mongodb
+Name
+DATABASE_USER
+Value
+
+user
+Name
+DATABASE_PASSWORD
+Value
+
+Ux4VLMQU16BA
+Name
+DATABASE_NAME
+Value
+
+bastelraumtoedi
+Name
+DATABASE_ADMIN_PASSWORD
+Value
+
+Ux4VLMQU16BA
+Name
+NPM_MIRROR
+Value

@@ -1,0 +1,22 @@
+MongoDB 2.4 database added.  Please make note of these credentials:
+
+   Root User:     admin
+   Root Password: Ux4VLMQU16BA
+   Database Name: bastelraumtoedi
+
+Connection URL: mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/
+Your application has been created. Continue to the application overview page.
+
+Making code changes
+Install the Git client for your operating system, and from your command line run
+
+git clone ssh://597b10e689f5cfb094000019@bastelraumtoedi-iiotprojects.rhcloud.com/~/git/bastelraumtoedi.git/
+cd bastelraumtoedi/
+This will create a folder with the source code of your application. After making a change, add, commit, and push your changes.
+
+git add .
+git commit -m 'My changes'
+git push
+When you push changes the OpenShift server will report back its status on deploying your code. The server will run any of your configured deploy hooks and then restart the application.
+
+

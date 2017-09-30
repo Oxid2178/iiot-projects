@@ -1,0 +1,317 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Alle Rechte vorbehalten.
+
+C:\Users\acarlucci>cdv ..
+Der Befehl "cdv" ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\Users\acarlucci>cd ..
+
+C:\Users>cd ..
+
+C:\>cd MongoDB\Server\3.4\bin
+
+C:\MongoDB\Server\3.4\bin>./mongo
+Der Befehl "." ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\MongoDB\Server\3.4\bin>./mongo.exe
+Der Befehl "." ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\MongoDB\Server\3.4\bin>./mongo.exe
+Der Befehl "." ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\MongoDB\Server\3.4\bin>mongo.exe
+MongoDB shell version v3.4.6
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.6
+Server has startup warnings:
+2017-07-20T13:31:21.997+0200 I CONTROL  [initandlisten]
+2017-07-20T13:31:21.998+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-07-20T13:31:21.998+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-07-20T13:31:21.998+0200 I CONTROL  [initandlisten]
+> use contactlist
+switched to db contactlist
+> contactlist.find
+2017-07-20T13:36:52.464+0200 E QUERY    [thread1] ReferenceError: contactlist is not defined :
+@(shell):1:1
+> db.contactlist.find
+function (query, fields, limit, skip, batchSize, options) {
+    var cursor = new DBQuery(this._mongo,
+                             this._db,
+                             this,
+                             this._fullName,
+                             this._massageObject(query),
+                             fields,
+                             limit,
+                             skip,
+                             batchSize,
+                             options || this.getQueryOptions());
+
+    var connObj = this.getMongo();
+    var readPrefMode = connObj.getReadPrefMode();
+    if (readPrefMode != null) {
+        cursor.readPref(readPrefMode, connObj.getReadPrefTagSet());
+    }
+
+    var rc = connObj.getReadConcern();
+    if (rc) {
+        cursor.readConcern(rc);
+    }
+
+    return cursor;
+}
+> db.contactlist.find()
+{ "_id" : "59707e47625e0a307028243b", "name" : "Antodfg", "email" : "anto@email1.com", "number" : "111 111-1111" }
+> db.contactlist.remove()
+2017-07-20T13:39:37.926+0200 E QUERY    [thread1] Error: remove needs a query :
+DBCollection.prototype._parseRemove@src/mongo/shell/collection.js:409:1
+DBCollection.prototype.remove@src/mongo/shell/collection.js:434:18
+@(shell):1:1
+> db.contactlist.removeAll()
+2017-07-20T13:40:18.583+0200 E QUERY    [thread1] TypeError: db.contactlist.removeAll is not a function :
+@(shell):1:1
+> --help
+NaN
+> db --help
+2017-07-20T13:40:31.568+0200 E QUERY    [thread1] SyntaxError: missing ; before statement @(shell):1:5
+> ?
+...
+...
+>
+>
+> db.contactlist.remove({name: Antodfg})
+2017-07-20T13:41:01.712+0200 E QUERY    [thread1] ReferenceError: Antodfg is not defined :
+@(shell):1:24
+> db.contactlist.remove({name: "Antodfg"})
+WriteResult({ "nRemoved" : 1 })
+>
+>
+>
+> db.contactlist.find()
+>
+>
+>
+> db.contactlist.remove({name: "Anto123"})
+WriteResult({ "nRemoved" : 1 })
+> db.contactlist.remove({name: "Ale456"})
+WriteResult({ "nRemoved" : 1 })
+>
+>
+> db.contactlist.remove({name: "Antonella"})
+WriteResult({ "nRemoved" : 1 })
+>
+>
+> exit
+bye
+
+C:\MongoDB\Server\3.4\bin>mongo.exe
+MongoDB shell version v3.4.6
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.6
+Server has startup warnings:
+2017-07-20T13:31:21.997+0200 I CONTROL  [initandlisten]
+2017-07-20T13:31:21.998+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-07-20T13:31:21.998+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-07-20T13:31:21.998+0200 I CONTROL  [initandlisten]
+> show dbs
+admin        0.000GB
+contactlist  0.000GB
+local        0.000GB
+> use webpages
+switched to db webpages
+> quit
+function quit() {
+    [native code]
+}
+> quit()
+
+C:\MongoDB\Server\3.4\bin>mongo.exe
+MongoDB shell version v3.4.6
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.6
+Server has startup warnings:
+2017-07-20T13:31:21.997+0200 I CONTROL  [initandlisten]
+2017-07-20T13:31:21.998+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-07-20T13:31:21.998+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-07-20T13:31:21.998+0200 I CONTROL  [initandlisten]
+> show dbs
+admin        0.000GB
+contactlist  0.000GB
+local        0.000GB
+> use test
+switched to db test
+> show collection
+2017-07-21T16:17:06.497+0200 E QUERY    [thread1] Error: don't know how to show [collection] :
+shellHelper.show@src/mongo/shell/utils.js:906:11
+shellHelper@src/mongo/shell/utils.js:659:15
+@(shellhelp2):1:1
+> show collections
+> show collections
+> show collections
+websitemodels
+> show collections
+websitemodels
+> show collections
+websitemodels
+> use websitemodels
+switched to db websitemodels
+> exit
+bye
+
+C:\MongoDB\Server\3.4\bin>mongo.exe
+MongoDB shell version v3.4.6
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.6
+Server has startup warnings:
+2017-07-21T16:29:09.731+0200 I CONTROL  [initandlisten]
+2017-07-21T16:29:09.731+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-07-21T16:29:09.731+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-07-21T16:29:09.731+0200 I CONTROL  [initandlisten]
+> show dbs
+admin        0.000GB
+contactlist  0.000GB
+local        0.000GB
+test         0.000GB
+> use test
+switched to db test
+> show collections
+websitemodels
+> db.websitemodels.drop()
+true
+> show collections
+>
+>
+> show collections
+> show collections
+>
+>
+>
+> show collections
+website
+> db.website.find
+function (query, fields, limit, skip, batchSize, options) {
+    var cursor = new DBQuery(this._mongo,
+                             this._db,
+                             this,
+                             this._fullName,
+                             this._massageObject(query),
+                             fields,
+                             limit,
+                             skip,
+                             batchSize,
+                             options || this.getQueryOptions());
+
+    var connObj = this.getMongo();
+    var readPrefMode = connObj.getReadPrefMode();
+    if (readPrefMode != null) {
+        cursor.readPref(readPrefMode, connObj.getReadPrefTagSet());
+    }
+
+    var rc = connObj.getReadConcern();
+    if (rc) {
+        cursor.readConcern(rc);
+    }
+
+    return cursor;
+}
+> db.website.find()
+{ "_id" : ObjectId("597210583be14f3cc879072d"), "name" : "Website 1", "created" : ISODate("2017-07-21T14:31:52.046Z"), "__v" : 0 }
+> db.website.find()
+{ "_id" : ObjectId("597210583be14f3cc879072d"), "name" : "Website 1", "created" : ISODate("2017-07-21T14:31:52.046Z"), "__v" : 0 }
+{ "_id" : ObjectId("597211fe82382621607e9e31"), "name" : "Website 1", "created" : ISODate("2017-07-21T14:38:54.400Z"), "__v" : 0 }
+>
+>
+>
+> db.website.find()
+{ "_id" : ObjectId("597210583be14f3cc879072d"), "name" : "Website 1", "created" : ISODate("2017-07-21T14:31:52.046Z"), "__v" : 0 }
+{ "_id" : ObjectId("597211fe82382621607e9e31"), "name" : "Website 1", "created" : ISODate("2017-07-21T14:38:54.400Z"), "__v" : 0 }
+> db.website.find()
+{ "_id" : ObjectId("597210583be14f3cc879072d"), "name" : "Website 1", "created" : ISODate("2017-07-21T14:31:52.046Z"), "__v" : 0 }
+{ "_id" : ObjectId("597211fe82382621607e9e31"), "name" : "Website 1", "created" : ISODate("2017-07-21T14:38:54.400Z"), "__v" : 0 }
+{ "_id" : ObjectId("5972128382382621607e9e32"), "name" : "NewWebSite", "created" : ISODate("2017-07-21T14:41:07.115Z"), "__v" : 0 }
+{ "_id" : ObjectId("597212e148d64130f0163201"), "name" : "NewWebSite", "created" : ISODate("2017-07-21T14:42:41.114Z"), "__v" : 0 }
+>
+>
+>
+> db.website.drop()
+true
+>
+>
+>
+> show collections
+> show collections
+> show collections
+> show collections
+website
+> db.website.find
+function (query, fields, limit, skip, batchSize, options) {
+    var cursor = new DBQuery(this._mongo,
+                             this._db,
+                             this,
+                             this._fullName,
+                             this._massageObject(query),
+                             fields,
+                             limit,
+                             skip,
+                             batchSize,
+                             options || this.getQueryOptions());
+
+    var connObj = this.getMongo();
+    var readPrefMode = connObj.getReadPrefMode();
+    if (readPrefMode != null) {
+        cursor.readPref(readPrefMode, connObj.getReadPrefTagSet());
+    }
+
+    var rc = connObj.getReadConcern();
+    if (rc) {
+        cursor.readConcern(rc);
+    }
+
+    return cursor;
+}
+> db.website.find()
+{ "_id" : ObjectId("5972141ddb4e294628c9fdd4"), "name" : "website1", "created" : ISODate("2017-07-21T14:47:57.621Z"), "__v" : 0 }
+> db.website.find()
+{ "_id" : ObjectId("5972141ddb4e294628c9fdd4"), "name" : "website1", "created" : ISODate("2017-07-21T14:47:57.621Z"), "__v" : 0 }
+{ "_id" : ObjectId("59721445db4e294628c9fdd5"), "name" : "NewWebsite", "created" : ISODate("2017-07-21T14:48:37.751Z"), "__v" : 0 }
+>
+
+
+
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation. Alle Rechte vorbehalten.
+
+C:\Users\acarlucci>cd ..
+
+C:\Users>cd ..
+
+C:\>cd MongoDB\Server\3.4\bin
+
+C:\MongoDB\Server\3.4\bin>
+C:\MongoDB\Server\3.4\bin>mongo.exe
+MongoDB shell version v3.4.6
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.4.6
+Server has startup warnings:
+2017-07-26T11:14:43.570+0200 I CONTROL  [initandlisten]
+2017-07-26T11:14:43.571+0200 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2017-07-26T11:14:43.571+0200 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2017-07-26T11:14:43.572+0200 I CONTROL  [initandlisten]
+> show dbs
+admin        0.000GB
+contactlist  0.000GB
+local        0.000GB
+test         0.000GB
+> use contactlist
+switched to db contactlist
+> db.contactlist.find()
+>
+>
+> db.contactlist.insert({name: "Antonio", email: "anto@gmail.ch", number: "111 111-1111"})
+WriteResult({ "nInserted" : 1 })
+> db.contactlist.find()
+{ "_id" : ObjectId("59786b3024909d3343ff35d2"), "name" : "Antonio", "email" : "anto@gmail.ch", "number" : "111 111-1111" }
+>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+	<!-- <meta http-equiv="Content-Type" content="text/html;charset=utf-8"> -->
+	<title>Contact List App</title>
+	<!-- Latest compiled and minified CSS -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+	<!-- Optional theme -->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/chart.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/angular-chart.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="controllers/controller.js"></script>
+    <!--<script src="features/websites/WebSiteServices.js"></script>
+    <script src="features/websites/WebSiteController.js"></script>-->
+</head>
+<body ng-app="myApp">
+
+    <!--<p><a href="#/!">Main</a></p>
+
+    <a href="#!london">City 1</a>
+    <a href="#!paris">City 2</a>
+
+    <p>Click on the links.</p>
+
+    <p>Note that each "view" has its own controller which each gives the "msg" variable a value.</p>-->
+
+    <!--<div ng-view></div>-->
+
+<!--<body ng-app="IdeApp">-->
+	<div class="container" ng-controller="AppCtrl">
+
+    <!--<div class="container" ng-controller="WebSiteController">-->
+        <!--{{hello}}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        <input class="form-control" ng-model="website.name"/>
+                    </th>
+                    <th button class="btn btn-success" ng-click="add(website)">
+                        +
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="website in websites">
+                    <td>{{website.name}}</td>
+                    <td>
+                        <button class="btn btn-danger" ng-click="remove(website._id)">&times;</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>-->
+
+
+		<h1>Contact List App</h1>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Number</th>
+					<th>Action</th>
+					<th>&nbsp</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input class="form-control" ng-model="contact.name"></td>
+					<td><input class="form-control" ng-model="contact.email"></td>
+					<td><input class="form-control" ng-model="contact.number"></td>
+					<td><button class="btn btn-primary" ng-click="addContact()">Add Contact</button></td>
+					<td>
+						<button class="btn btn-info" ng-click="update()">Update</button>&nbsp&nbsp
+						<button class="btn btn-info" ng-click="deselect()">Clear</button>
+					</td>
+				</tr>
+				<tr ng-repeat="contact in contactlist">
+					<td>{{contact.name}}</td>
+					<td>{{contact.email}}</td>
+					<td>{{contact.number}}</td>
+					<td><button class="btn btn-danger" ng-click="remove(contact._id)">Remove</button></td>
+					<td><button class="btn btn-warning" ng-click="edit(contact._id)">Edit</button></td>
+				</tr>
+			</tbody>
+		</table>
+
+        <!--<canvas id="line" class="chart chart-line" chart-data="data"
+                chart-labels="labels" chart-series="series" chart-options="options"
+                chart-dataset-override="datasetOverride" chart-click="onClick">
+        </canvas>-->
+
+        <!--<canvas id="myChart" class="chart chart-line" chart-data="plots"
+                chart-series="series" chart-options="options" chart-click="onClick">
+        </canvas>-->
+
+        <section id="reactive">
+            <div class="page-header">
+                <h1>Reactive</h1>
+                <p>All charts are reactive and will update automatically when data changes.</p>
+            </div>
+            <div class="row" ng-controller="DataTablesCtrl">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Reactive Chart</div>
+                        <div class="panel-body">
+                            <canvas id="tables" class="chart chart-line" chart-data="data" chart-options="options"
+                                    chart-labels="labels" chart-colors="colors"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">Chart Data</div>
+                        <div class="panel-body">
+                            <table class="table table-responsive table-condensed table-striped">
+                                <tr>
+                                    <th ng-repeat="label in labels">{{label}}</th>
+                                </tr>
+                                <tr ng-repeat="dataSet in data">
+                                    <td ng-repeat="set in dataSet track by $index"><span style="text-align: right;">{{data[$parent.$index][$index]}}</span></td>
+                                </tr>
+                            </table>
+                            <button type="button" class="btn btn-primary pull-right" ng-click="randomize()">Randomize</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="mytempChart">
+            <div><canvas id="myChart" width="400" height="250"></canvas></div>
+            <button class="btn btn-primary" ng-click="adddata()">Add Data</button>
+        </section>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Room</th>
+                    <th>User</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="room in datas">
+                    <td>{{room.room}}</td>
+                    <td>{{room.users}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+	</div>
+
+</body>
+</html>

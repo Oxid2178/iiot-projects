@@ -1,0 +1,300 @@
+Fetching: hashie-3.5.6.gem (100%)
+Successfully installed hashie-3.5.6
+Fetching: powerbar-1.0.18.gem (100%)
+Successfully installed powerbar-1.0.18
+Fetching: minitar-cli-0.6.1.gem (100%)
+Successfully installed minitar-cli-0.6.1
+Fetching: archive-tar-minitar-0.6.1.gem (100%)
+'archive-tar-minitar' has been deprecated; just install 'minitar'.
+Successfully installed archive-tar-minitar-0.6.1
+Fetching: highline-1.6.21.gem (100%)
+Successfully installed highline-1.6.21
+Fetching: commander-4.2.1.gem (100%)
+Successfully installed commander-4.2.1
+Fetching: httpclient-2.6.0.1.gem (100%)
+Successfully installed httpclient-2.6.0.1
+Fetching: open4-1.3.4.gem (100%)
+Successfully installed open4-1.3.4
+Fetching: rhc-1.38.7.gem (100%)
+===========================================================================
+
+If this is your first time installing the RHC tools, please run 'rhc setup'
+
+===========================================================================
+Successfully installed rhc-1.38.7
+Parsing documentation for net-ssh-4.1.0
+Installing ri documentation for net-ssh-4.1.0
+Parsing documentation for net-scp-1.2.1
+Installing ri documentation for net-scp-1.2.1
+Parsing documentation for net-ssh-gateway-2.0.0
+Installing ri documentation for net-ssh-gateway-2.0.0
+Parsing documentation for net-ssh-multi-1.2.1
+Installing ri documentation for net-ssh-multi-1.2.1
+Parsing documentation for minitar-0.6.1
+Installing ri documentation for minitar-0.6.1
+Parsing documentation for hashie-3.5.6
+Installing ri documentation for hashie-3.5.6
+Parsing documentation for powerbar-1.0.18
+Installing ri documentation for powerbar-1.0.18
+Parsing documentation for minitar-cli-0.6.1
+Installing ri documentation for minitar-cli-0.6.1
+Parsing documentation for archive-tar-minitar-0.6.1
+Installing ri documentation for archive-tar-minitar-0.6.1
+Parsing documentation for highline-1.6.21
+Installing ri documentation for highline-1.6.21
+Parsing documentation for commander-4.2.1
+Installing ri documentation for commander-4.2.1
+Parsing documentation for httpclient-2.6.0.1
+Installing ri documentation for httpclient-2.6.0.1
+Parsing documentation for open4-1.3.4
+Installing ri documentation for open4-1.3.4
+Parsing documentation for rhc-1.38.7
+Installing ri documentation for rhc-1.38.7
+Done installing documentation for net-ssh, net-scp, net-ssh-gateway, net-ssh-multi, minitar, hashie, powerbar, minitar-cli, archive-tar-minitar, highline, commander, httpclient, open4, rhc after 16 se
+conds
+14 gems installed
+
+C:\Users\acarlucci>
+C:\Users\acarlucci>
+C:\Users\acarlucci>rhc setup
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::NIL is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TRUE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::FALSE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Fixnum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Bignum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TimeoutError is deprecated
+OpenShift Client Tools (RHC) Setup Wizard
+
+This wizard will help you upload your SSH keys, set your application namespace, and check that other programs like Git are properly installed.
+
+If you have your own OpenShift server, you can specify it now. Just hit enter to use the server for OpenShift Online: openshift.redhat.com.
+Enter the server hostname: |openshift.redhat.com| antonio.carlucci@sunrise.ch
+
+You can add more servers later using 'rhc server'.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+
+The OpenShift server is not responding correctly.  Check that 'https://antonio.carlucci@sunrise.ch/broker/rest/api' is the correct URL for your server. The server may be offline or misconfigured.
+
+C:\Users\acarlucci>rhc setup
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::NIL is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TRUE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::FALSE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Fixnum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Bignum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TimeoutError is deprecated
+OpenShift Client Tools (RHC) Setup Wizard
+
+This wizard will help you upload your SSH keys, set your application namespace, and check that other programs like Git are properly installed.
+
+If you have your own OpenShift server, you can specify it now. Just hit enter to use the server for OpenShift Online: openshift.redhat.com.
+Enter the server hostname: |openshift.redhat.com| http://contactlistapp-iiotprojects.rhcloud.com/
+
+You can add more servers later using 'rhc server'.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:983:in `read_body_chunked': Object#timeout is deprecated, use Timeout.timeout instead.
+
+The OpenShift server is not responding correctly.  Check that 'http://contactlistapp-iiotprojects.rhcloud.com/broker/rest/api' is the correct URL for your server. The server may be offline or
+misconfigured.
+
+C:\Users\acarlucci>rhc setup
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::NIL is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TRUE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::FALSE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Fixnum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Bignum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TimeoutError is deprecated
+OpenShift Client Tools (RHC) Setup Wizard
+
+This wizard will help you upload your SSH keys, set your application namespace, and check that other programs like Git are properly installed.
+
+If you have your own OpenShift server, you can specify it now. Just hit enter to use the server for OpenShift Online: openshift.redhat.com.
+Enter the server hostname: |openshift.redhat.com| https://openshift.redhat.com/app/console/application/5970b1b689f5cf2c790000ee-contactlistapp
+
+You can add more servers later using 'rhc server'.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+
+The server did not respond correctly. This may be an issue with the server configuration or with your connection to the server (such as a Web proxy or firewall). Please verify that you can access the
+OpenShift server https://openshift.redhat.com/app/console/application/5970b1b689f5cf2c790000ee-contactlistapp
+
+C:\Users\acarlucci>rhc setup
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::NIL is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TRUE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::FALSE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Fixnum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Bignum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TimeoutError is deprecated
+OpenShift Client Tools (RHC) Setup Wizard
+
+This wizard will help you upload your SSH keys, set your application namespace, and check that other programs like Git are properly installed.
+
+If you have your own OpenShift server, you can specify it now. Just hit enter to use the server for OpenShift Online: openshift.redhat.com.
+Enter the server hostname: |openshift.redhat.com|
+
+You can add more servers later using 'rhc server'.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+
+Login to openshift.redhat.com: antonio.carlucci@sunrise.ch
+Password: *********
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+
+OpenShift can create and store a token on disk which allows to you to access the server without using your password. The key is stored in your home directory and should be kept secret.  You can delete
+
+the key at any time by running 'rhc logout'.
+Generate a token now? (yes|no) yes
+Generating an authorization token for this client ... C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.time
+out instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+lasts about 1 month
+
+Saving configuration to C:\Users\acarlucci\.openshift\express.conf ... done
+
+No SSH keys were found. We will generate a pair of keys for you.
+
+    Created: C:/Users/acarlucci/.ssh/id_rsa.pub
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+
+Your public SSH key must be uploaded to the OpenShift server to access code.  Upload now? (yes|no) yes
+
+  crashcourseappssh (type: ssh-rsa)
+  ---------------------------------
+    Fingerprint: 34:a3:26:03:c5:e7:3b:8a:d1:02:a6:42:29:ca:7e:2f
+
+You can enter a name for your key, or leave it blank to use the default name. Using the same name as an existing key will overwrite the old key.
+
+Provide a name for this key: |antoniocarlucciE| iiotprojectkey
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+
+Uploading key 'iiotprojectkey' ... done
+
+Checking common problems
+
+Your private SSH key file should be set as readable only to yourself.  Please run 'chmod 600 C:\Users\acarlucci\.ssh\id_rsa'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+
+Checking for a domain ... iiotprojects
+
+Checking for applications ... found 1
+
+  contactlistapp http://contactlistapp-iiotprojects.rhcloud.com/
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/rhc-1.38.7/lib/rhc/wizard.rb:489: warning: constant ::Fixnum is deprecated
+
+  You are using 1 of 3 total gears
+  The following gear sizes are available to you: small
+
+Your client tools are now configured.
+
+C:\Users\acarlucci>rhc show-app cpntactlisapp
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::NIL is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TRUE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::FALSE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Fixnum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Bignum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TimeoutError is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+Application 'cpntactlisapp' not found.
+
+C:\Users\acarlucci>rhc show-app contactlistapp
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::NIL is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TRUE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::FALSE is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Fixnum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::Bignum is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/commander-4.2.1/lib/commander/user_interaction.rb:328: warning: constant ::TimeoutError is deprecated
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:746:in `connect': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:616:in `query': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:872:in `parse_header': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/httpclient-2.6.0.1/lib/httpclient/session.rb:950:in `read_body_length': Object#timeout is deprecated, use Timeout.timeout instead.
+contactlistapp @ http://contactlistapp-iiotprojects.rhcloud.com/ (uuid: 5970b1b689f5cf2c790000ee)
+-------------------------------------------------------------------------------------------------
+  Domain:     iiotprojects
+  Created:    Jul 20  1:35 PM
+  Gears:      1 (defaults to small)
+  Git URL:    ssh://5970b1b689f5cf2c790000ee@contactlistapp-iiotprojects.rhcloud.com/~/git/contactlistapp.git/
+  SSH:        5970b1b689f5cf2c790000ee@contactlistapp-iiotprojects.rhcloud.com
+  Deployment: auto (on git push)
+
+  mongodb-2.4 (MongoDB 2.4)
+  -------------------------
+    Gears:          Located with nodejs-0.10
+    Connection URL: mongodb://$OPENSHIFT_MONGODB_DB_HOST:$OPENSHIFT_MONGODB_DB_PORT/
+    Database Name:  contactlistapp
+    Password:       QjsgbItJ_ZSd
+    Username:       admin
+
+  nodejs-0.10 (Node.js 0.10)
+  --------------------------
+    Gears: Located with mongodb-2.4
+
+C:\Users\acarlucci>
